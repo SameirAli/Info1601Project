@@ -4,7 +4,9 @@ Project for class ( crossplatform idle game)
 Project definition so far:
   Cross platform idle game :-
    *  able to transfer score between mobile and pc
-   * same level of functionality between platforms
+   * Pc has clicking features
+   * mobile has tap features
+   
 
 Things to do:
 * Look for textures for game (i.e Sprites, Themes, styles sheets) can also come up with different themes for the game.
