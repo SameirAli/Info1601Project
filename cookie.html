@@ -1,16 +1,32 @@
+<!DOCTYPE html>
 <html>
     <head>
-        <script type="text/javascript" src="js/cookie.js"></script>
+        <script type="text/javascript" src="cookie.js"></script>
         <title>Shark Bait's Cookie Clicker Game!</title>
         <link rel = "stylesheet" href = "style.css"/>
     </head>
 
-    <body>
+    <body onload = "getName()">  <!-- Prompts user for Name -->
         <div id = "space"></div>
-        <div id = "cookie" onclick="cookieClick()">
-            <img src="https://media.giphy.com/media/l0u0eiVkW4x0Y/200.gif" width="200px"/>
-        </div>
-        
+		
+		<div id= "land">
+			<div id = "cookie" onclick="cookieClick()">
+				<img src="https://media.giphy.com/media/l0u0eiVkW4x0Y/200.gif" width="200px"/>
+			</div>
+		</div>	
+		<p> Buy passive upgrades: </p>
+		<div class= "button" id = "button1" onclick = "passiveEffect(100)">Cost: 100 cookies <br><br> +1 <img src ="cookiepic.png" id="cookiepic"></img> per second
+		</div>
+		
+		<div class= "button" id= "button2" onclick = "passiveEffect(400)">Cost: 400 cookies <br><br> +5 <img src ="cookiepic.png" id="cookiepic"></img> per second
+		</div>
+		
+		<div class= "button" id= "button3" onclick = "passiveEffect(800)">Cost: 800 cookies <br><br> +10 <img src ="cookiepic.png" id="cookiepic"></img> per second
+		</div>
+		
+		<div class= "button" id= "button4" onclick = "passiveEffect(1500)">Cost: 1500 cookies <br><br> +20 <img src ="cookiepic.png" id="cookiepic"></img> per second
+		</div>
+			
         <p>Number of Cookies:</p>
         
         <div id = "numbers"></div>
@@ -29,25 +45,25 @@
             <tr>
                 <td>Granny!</td>
                 <td>Granny make 2x's as much!</td>
-                <td>30 cookies!</td>
+                <td>50 cookies!</td>
             </tr>
             
             <tr>
                 <td>Factory</td>
                 <td> Factory makes 10x's as much!</td>
-                <td>500 cookies!</td>
+                <td>250 cookies!</td>
             </tr>
             
             <tr>
                 <td>Plant</td>
                 <td> Plant makes 30x's as much!</td>
-                <td>1,000 cookies!</td>
+                <td>750 cookies!</td>
             </tr>
             
              <tr>
                 <td>SuperPlant</td>
                 <td> SuperFactory makes 1000x's as much!</td>
-                <td>100,000 cookies!</td>
+                <td>25,000 cookies!</td>
             </tr>
 
         </table>
