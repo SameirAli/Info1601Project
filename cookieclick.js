@@ -1,15 +1,14 @@
-//initial number of cookies    
-var num = 0;
-
-window.onload = function () {
-        var name = prompt("What is your name");
-        
-        var space = document.getElementById("space");
-        
-        space.innerHTML = name + "'s Bakery";
+let num = 0;
+let passive = 0;
+   
+function getName(){
+        let name = prompt("What is your name","");
+		
+		if(name != null)
+        document.getElementById("space").innerHTML = name + "'s Bakery";
 }
 
-var cookie = document.getElementById("cookie");
+ // let cookie = document.getElementById("cookie");  Idk what this is for.
 
 function cookieClick() { 
     num += 1;
@@ -19,28 +18,53 @@ function cookieClick() {
     //upgrade level for printing
     var upgradeLevel = document.getElementById("upgradeLevel");
     
-    numbers.innerHTML = num;      
+    numbers.innerHTML = num;  
+	
     //automatic Granny upgrade to 2x
-    if(num >= 30 ){
+    if(num >= 50 ){
         num += 2;
         upgradeLevel.innerHTML = "Granny Level";
     }
 
     //automatic factory upgrade to 10x
-    if(num >= 500) {
+    if(num >= 250) {
         num += 10;
         upgradeLevel.innerHTML = "Factory Level";
     }
 
     //automatic plant upgrade to 30x
-    if(num >= 1000) {
+    if(num >= 750) {
         num += 30;
         upgradeLevel.innerHTML = "Plant Level";
     }
 
     //automatic super factory upgrade to 1000x
-    if(num >= 100000) {
+    if(num >= 25000) {
         num += 1000;
         upgradeLevel.innerHTML = "Super-Plant Level";
     }
 }
+
+function passiveEffect(amount){  // Should add 1 cookie every second to total.
+	if(num < amount)
+		alert("Not enough cookies for this upgrade.");
+	else{
+		num = num - amount;
+		document.getElementById("numbers").innerHTML = num;
+		if(amount == 100)
+			passive += 1;
+		if(amount == 400)
+			passive += 5;
+		if(amount == 800)
+			passive += 10;
+		if(amount == 1500)
+			passive += 20; 
+	}
+}
+
+function cookieRate(){
+	num = num + passive;
+	document.getElementById("numbers").innerHTML = num;
+}
+
+setInterval(cookieRate,1000);
