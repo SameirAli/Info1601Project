@@ -13,10 +13,10 @@ function getName(){
 function cookieClick() { 
     num += 1;
 
-    var numbers = document.getElementById("numbers");
+    let numbers = document.getElementById("numbers");
     
     //upgrade level for printing
-    var upgradeLevel = document.getElementById("upgradeLevel");
+    let upgradeLevel = document.getElementById("upgradeLevel");
     
     numbers.innerHTML = num;  
 	
@@ -67,4 +67,32 @@ function cookieRate(){
 	document.getElementById("numbers").innerHTML = num;
 }
 
+function checkUpgradeLevel(){
+	let upgradeLevel = document.getElementById("upgradeLevel");
+	
+	if(num<50)
+		upgradeLevel.innerHTML = " ";
+	
+	//automatic Granny upgrade to 2x
+    if(num >= 50 ){
+        upgradeLevel.innerHTML = "Granny Level";
+    }
+
+    //automatic factory upgrade to 10x
+    if(num >= 250) {
+        upgradeLevel.innerHTML = "Factory Level";
+    }
+
+    //automatic plant upgrade to 30x
+    if(num >= 750) {
+        upgradeLevel.innerHTML = "Plant Level";
+    }
+
+    //automatic super factory upgrade to 1000x
+    if(num >= 25000) {
+        upgradeLevel.innerHTML = "Super-Plant Level";
+    }
+}
+
 setInterval(cookieRate,1000);
+setInterval(checkUpgradeLevel,1000);
