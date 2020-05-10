@@ -12,6 +12,7 @@ p {
     color: white;
     display: block;
     margin: 5px;
+	position:inline;	
 }
 
 #space {
@@ -83,55 +84,56 @@ div{
 	height: 80px;
 	font-size: 12px;
 	background-color:#9966ff;
-				color: #fff;
-				border: solid;
-				border-radius: 15px;
-				box-shadow: 0 9px #999;
-				margin: 15px;
-				padding:5px;
-				text-align:center;
-			}
+	color: #fff;
+	border: solid;
+	border-radius: 15px;
+	box-shadow: 0 9px #999;
+	margin: 15px;
+	padding:5px;
+	text-align:center;
+}
 			
-			.button:active{
-				background-color: #661aff;
-				box-shadow: 0 5px #500	;
-				transform: translateY(4px);
-			}
+.button:active{
+	background-color: #661aff;
+	box-shadow: 0 5px #500	;
+	transform: translateY(4px);
+}			
 			
+.pic{
+	max-height:70%;
+	max-width :70%;
+}
 			
-			.pic{
-				max-height:70%;
-				max-width :70%;
-			}
-			
-			#cookiepic{
-				max-height: 20%;
-				max-width: 20%;
-				position:relative;
-				top: 5px;
-			}
+#cookiepic{
+	max-height: 20%;
+	max-width: 20%;
+	top: 5px;
+}
 			
 			
-			#button1{
-				postion:absolute;
-				top: 68%;
-				left:30%;
-			}
+#button1{
+	position:relative;
+}
 			
-			#button2{
-				position:absolute;
-				left: 40%;
-				top: 68%;
-				}
+#button2{
+	position:relative;
+	bottom:110px;
+	left:115px;
+}
 				
-			#button3{
-				position:absolute;
-				top:68%;
-				left: 50%;
-			}
+#button3{
+	position:relative;
+	bottom:220px;
+	left:230px;
+}
 			
-			#button4{
-				position:absolute;
-				top:68%;
-				left: 60%;
-			}
+#button4{
+	position:relative;
+	bottom:330px;
+	left:345px;
+}
+
+#move{
+	position:relative;
+	bottom:310px;
+}
