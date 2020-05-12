@@ -1,139 +1,140 @@
 body {
-    padding-top: 30px;
-    font-family: Arial;
-    background-color: turquoise;
-    width: 500px;
-    margin: auto;
-    text-align: center;
+  padding-top: 30px;
+  font-family: Arial;
+  background-color: turquoise;
+  width: 500px;
+  margin: auto;
+  text-align: center;
 }                                           
 
 p {
-    font-size: 20px;
-    color: white;
-    display: block;
-    margin: 5px;
-	position:inline;	
+  font-size: 20px;
+  color: white;
+  display: block;
+  margin: 5px;
+position:inline;	
 }
 
 #space {
-    margin: auto;
-    text-align:center;
-    padding-top: 20px;
-    margin-bottom: 5px;
-    font-size: 30px;
-    border:5px solid;
-    border-radius:10px;
-    background-color: greenyellow;
-    color: white;
-    width:389px;
-    height:60px;
+  margin: auto;
+  text-align:center;
+  padding-top: 20px;
+  margin-bottom: 5px;
+  font-size: 30px;
+  border:5px solid;
+  border-radius:10px;
+  background-color: #18544E;
+  color: white;
+  width:389px;
+  height:60px;
 }
 
 table {
-    margin-top: 10px;
-    border: 2px solid;
-    border-radius: 5px;
+  margin-top: 10px;
+  border: 2px solid;
+  border-radius: 5px;
 }
 
 td {
-    border:1px solid;
+  border:1px solid;
 }
 
 #numbers {
-    margin: auto;
-    text-align:center;
-    padding-top: 20px;
-    margin-bottom: 20px;
-    font-size: 30px;
-    border:5px solid;
-    border-radius:10px;
-    background-color:white;
-    width:200px;
-    height:60px;    
+  margin: auto;
+  text-align:center;
+  padding-top: 20px;
+  margin-bottom: 20px;
+  font-size: 30px;
+  border:5px solid;
+  border-radius:10px;
+  background-color:white;
+  width:200px;
+  height:60px;    
 }
 
 #upgradeLevel {
-    margin: auto;
-    text-align:center;
-    padding-top: 20px;
-    margin-bottom: 20px;
-    font-size: 30px;
-    border:5px solid;
-    border-radius:10px;
-    background-color:lightpink;
-    width:300px;
-    height:50px;    
+  margin: auto;
+  text-align:center;
+  padding-top: 20px;
+  margin-bottom: 20px;
+  font-size: 30px;
+  border:5px solid;
+  border-radius:10px;
+  background-color:#A0F0E8;
+  width:300px;
+  height:50px;    
 }
 
 #land{	
-	border: solid;
-	border-color:white;
-	border-	width: 20px;
-	border-radius: 10px;
-	padding:20px;
-	margin 10px;
-	position:relative;
+border: solid;
+border-color:white;
+border-width: 20px;
+border-radius: 10px;
+padding: 20px;
+margin: 10px;
+position:relative;
 }
 
 div{
-	margin: 20px;
+margin: 20px;
 }
-			
+    
 .button{
-	width:  80px;
-	height: 80px;
-	font-size: 12px;
-	background-color:#9966ff;
-	color: #fff;
-	border: solid;
-	border-radius: 15px;
-	box-shadow: 0 9px #999;
-	margin: 15px;
-	padding:5px;
-	text-align:center;
+width:  80px;
+height: 80px;
+font-size: 12px;
+background-color:#9966ff;
+color: #fff;
+border: solid;
+border-radius: 15px;
+box-shadow: 0 9px #999;
+margin: 15px;
+padding:5px;
+text-align:center;
 }
-			
+    
 .button:active{
-	background-color: #661aff;
-	box-shadow: 0 5px #500	;
-	transform: translateY(4px);
+background-color: #661aff;
+box-shadow: 0 5px #500	;
+transform: translateY(4px);
 }			
-			
+    
 .pic{
-	max-height:70%;
-	max-width :70%;
+max-height:70%;
+max-width :70%;
 }
-			
+    
 #cookiepic{
-	max-height: 20%;
-	max-width: 20%;
-	top: 5px;
+max-height: 20%;
+max-width: 20%;
+position: relative;
+top: 5px;
 }
-			
-			
+    
+    
 #button1{
-	position:relative;
+position:relative;
 }
-			
+    
 #button2{
-	position:relative;
-	bottom:110px;
-	left:115px;
+position:relative;
+bottom:110px;
+left:115px;
 }
-				
+      
 #button3{
-	position:relative;
-	bottom:220px;
-	left:230px;
+position:relative;
+bottom:220px;
+left:230px;
 }
-			
+    
 #button4{
-	position:relative;
-	bottom:330px;
-	left:345px;
+position:relative;
+bottom:330px;
+left:345px;
 }
 
 #move{
-	position:relative;
-	bottom:310px;
+position:relative;
+bottom:310px;
 }
